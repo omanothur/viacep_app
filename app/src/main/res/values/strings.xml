@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App_viacep</string>
+    <string name="buscar_cep">Buscar CEP</string>
+    <string name="cep">CEP</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="endere_o">Endereço</string>
+    <string name="bairro">Bairro</string>
+    <string name="localidade">Localidade</string>
+    <string name="limpar">Limpar</string>
+</resources>

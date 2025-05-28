@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<LinearLayout
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/cep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue">
+            
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditCep"
+                android:hint="@string/cep"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:maxLength="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/BuscarCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#56B1F2"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp"
+        android:text="@string/buscar_cep"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditLogradouro"
+            android:hint="@string/logradouro"
+            android:inputType="text"
+            android:maxLines="@integer/material_motion_duration_short_1"
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditBairro"
+            android:hint="@string/bairro"
+            android:inputType="text"
+            android:maxLines="@integer/material_motion_duration_short_1"
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditLocalidade"
+            android:hint="@string/localidade"
+            android:inputType="text"
+            android:maxLines="@integer/material_motion_duration_short_1"
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditUf"
+            android:hint="UF"
+            android:inputType="text"
+            android:maxLength="2"
+            android:layout_gravity="center"
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Limpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#56B1F2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp"
+        android:text="@string/limpar"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+</ScrollView>
